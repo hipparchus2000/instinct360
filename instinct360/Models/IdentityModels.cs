@@ -29,5 +29,10 @@ namespace instinct360.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<instinct360.Models.ReviewTemplate> ReviewTemplates { get; set; }
+        public System.Data.Entity.DbSet<instinct360.Models.Review> Reviews { get; set; }
+        public System.Data.Entity.DbSet<instinct360.Models.User> Users { get; set; }
+
     }
 }
